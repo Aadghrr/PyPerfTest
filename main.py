@@ -1,4 +1,4 @@
-import dis
+import dis, os
 
 TEST_ARRAY = list(range(100000))
 
@@ -15,4 +15,4 @@ dis.dis(testLoop)
 
 dis.dis(testComprehension)
 
-
+print(os.getpid())
