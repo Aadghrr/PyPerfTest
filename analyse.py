@@ -19,5 +19,5 @@ PROCSTAT_SCHEMA = ['pid','comm','state','ppid','pgrp','sid','tty_nr',
 data = {k:[] for k in PROCSTAT_SCHEMA}
 
 for line in rawlog:
-    for k,v in zip(data,line.split(' '))
+    for k,v in zip(data,line.split(' ')):
        data[k].append(v)

@@ -15,4 +15,7 @@ dis.dis(testLoop)
 
 dis.dis(testComprehension)
 
-print(os.getpid())
+if __name__=='__main__':
+    print(os.getpid())
+    while True:
+        testLoop()
