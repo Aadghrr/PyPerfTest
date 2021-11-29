@@ -11,9 +11,9 @@ def testLoop():
         a.append(i*i)
     return a
 
-dis.dis(testLoop)
-
-dis.dis(testComprehension)
+def compareDisassemble():
+    dis.dis(testLoop)
+    dis.dis(testComprehension)
 
 if __name__=='__main__':
     print(os.getpid())
